@@ -3,3 +3,76 @@ Theme Name: Sample Theme
 Theme URI: http://www.www.www/
 Description: This is my sample theme.
 */
+
+/* container */
+div#container {
+	width: 760px;
+	margin: auto;
+}
+
+/* header */
+div#header h1 {
+	font-size: 1.875em;
+	margin: 0;
+	float: left;
+	margin-bottom: 4px;
+}
+
+div#header h1 a {
+	text-decoration: none;
+	color: #000000;
+}
+
+div#header p#desc {
+	font-size: 0.75em;
+	color: #444444;
+	margin: 0;
+	float: right;
+	margin-top: 18px;
+}
+
+div#header {
+	border-bottom: none;
+	padding-bottom: 0;
+	margin-bottom: 20px;
+}
+
+div#header p#image {
+	margin: 8px 0 0;
+}
+
+/* post */
+div.post {
+	border: solid 1px #0c8bcd;
+	padding: 15px;
+	margin-bottom: 20px;
+}
+
+div.post h2 {
+	background-color: #a3d2f2;
+	background-image: url(titlebar.png);
+	font-size: 0.875em;
+	padding: 10px;
+	margin: 0;
+}
+
+div.post h2 a {
+	text-decoration: none;
+	color: #000000;
+}
+
+div.post p {
+	font-size: 0.875em;
+	line-height: 1.6;
+	margin-top: 10px;
+}
+
+p.postinfo {
+	color: #0c8bcd;
+	text-align: right;
+	margin: 20px 0 0;
+}
+
+p.postinfo a {
+	color: #0c8bcd;
+}
