@@ -41,6 +41,12 @@ div#header p#image {
 	margin: 8px 0 0;
 }
 
+/* コンテンツ */
+div#content {
+	width: 515px;
+	float: left;
+}
+
 /* post */
 div.post {
 	border: solid 1px #0c8bcd;
@@ -71,8 +77,81 @@ p.postinfo {
 	color: #0c8bcd;
 	text-align: right;
 	margin: 20px 0 0;
+	clear: both;
 }
 
 p.postinfo a {
 	color: #0c8bcd;
+}
+
+/* 記事内の画像 */
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.post img {
+	border: none;
+}
+
+.alignleft {
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+.alignright {
+	float: right;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
+.wp-caption {
+	border: solid 1px #aaaaaa;
+	text-align: center;
+	padding-top: 5px;
+}
+
+/* pagelink */
+span.oldpage {
+	float: left;
+}
+
+span.newpage {
+	float: right;
+}
+
+p.pagelink a {
+	font-size: 0.75em;
+	color: #0c8bcd;
+}
+
+p.pagelink {
+	overflow: hidden;
+	width: 100%;
+}
+
+/* サイドバー */
+div#sidebar {
+	width: 220px;
+	float: right;
+}
+
+/* footer */
+div#footer {
+	clear: both;
+	border-top: solid 3px #000000;
+	padding: 6px 0;
+}
+
+address {
+	font-size: 0.75em;
+	font-style: normal;
+	font-family: Verdana, sans-serif;
+	margin: 0;
+}
+
+address a {
+	color: #000000;
 }

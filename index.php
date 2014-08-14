@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
 <head>
 <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>;charset=<?php bloginfo('charset'); ?>" />
-<title><?php bloginfo('name'); ?></title>
+<title><?php bloginfo('name'); ?><?php wp_title(); ?></title>
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" />
 </head>
 <body>
@@ -33,7 +33,42 @@
 </p>
 </div>
 
+<?php if(is_single()): ?>
+<p class="pagelink">
+<span class="oldpage">
+<?php previous_post_link(); ?>
+</span>
+
+<span class="newpage">
+<?php next_post_link(); ?>
+</span>
+</p>
+<?php endif; ?>
+
 <?php endwhile; endif; ?>
+
+<?php if(is_home()): ?>
+<p class="pagelink">
+<span class="oldpage">
+<?php next_posts_link('&laquo; 古い記事'); ?>
+</span>
+
+<span class="newpage">
+<?php previous_posts_link('新しい記事 &raquo;'); ?>
+</span>
+</p>
+<?php endif; ?>
+
+</div>
+
+<!-- サイドバー -->
+<div id="sidebar">
+ここはサイドバーです。
+</div>
+
+<!-- フッター -->
+<div id="footer">
+<address>Copyright &copy; <a href="mailto:<?php bloginfo('admin_email'); ?>">Hidamari Diary</a>, All rights reserved.</address>
 </div>
 
 </div>
