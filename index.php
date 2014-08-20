@@ -19,6 +19,11 @@
 
 <!-- content -->
 <div id="content">
+
+<?php if(is_category()): ?>
+<p id="pagetitle"><?php single_cat_title(); ?></p>
+<?php endif; ?>
+
 <?php if(have_posts()): while(have_posts()): the_post(); ?>
 
 <div class="post">
@@ -59,11 +64,27 @@
 </p>
 <?php endif; ?>
 
+<?php if(is_archive()): ?>
+<p class="pagelink">
+<span class="oldpage">
+<?php next_posts_link('&laquo; 古い記事'); ?>
+</span>
+
+<span class="newpage">
+<?php previous_posts_link('新しい記事 &raquo; '); ?>
+</span>
+</p>
+<?php endif; ?>
+
 </div>
 
 <!-- サイドバー -->
 <div id="sidebar">
-ここはサイドバーです。
+
+<ul>
+<?php dynamic_sidebar(); ?>
+</ul>
+
 </div>
 
 <!-- フッター -->

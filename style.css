@@ -47,6 +47,16 @@ div#content {
 	float: left;
 }
 
+p#pagetitle {
+	font-size: 0.875em;
+	font-weight: hold;
+	color: #0c8bcd;
+	border: dotted 1px #0c8bcd;
+	text-align: center;
+	padding: 10px 0;
+	margin-top: 0;
+}
+
 /* post */
 div.post {
 	border: solid 1px #0c8bcd;
@@ -136,6 +146,43 @@ p.pagelink {
 div#sidebar {
 	width: 220px;
 	float: right;
+}
+
+div#sidebar ul {
+	margin: 0;
+	padding: 0;
+}
+
+div#sidebar li {
+	list-style-type: none;
+}
+
+div#sidebar .widget {
+	background-color: #0c8bcd;
+	padding: 16px;
+	margin-bottom: 10px;
+}
+
+div#sidebar h2 {
+	font-size: 0.75em;
+	color: #ffffff;
+	border-bottom: solid 1px #ffffff;
+	padding-bottom: 8px;
+	margin: 0 0 10px;
+}
+
+div#sidebar li li {
+	font-size: 0.75em;
+	margin-bottom: 4px;
+	background-image: url(listmark.gif);
+	background-repeat: no-repeat;
+	padding-left: 16px;
+	color: #ffffff;
+}
+
+div#sidebar li li a {
+	text-decoration: none;
+	color: #ffffff;
 }
 
 /* footer */
