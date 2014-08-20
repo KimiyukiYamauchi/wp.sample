@@ -24,6 +24,20 @@
 <p id="pagetitle"><?php single_cat_title(); ?></p>
 <?php endif; ?>
 
+<?php if(is_month()): ?>
+<p id="pagetitle">
+<?php 
+
+//single_month_title(); 
+//echo $m;
+$thisyear = substr($m, 0, 4);
+$thismonth = substr($m, 4, 2);
+echo $thisyear . '年' . $thismonth . '月';
+
+?>
+</p>
+<?php endif; ?>
+
 <?php if(have_posts()): while(have_posts()): the_post(); ?>
 
 <div class="post">
