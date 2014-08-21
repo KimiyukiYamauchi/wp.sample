@@ -4,6 +4,7 @@
 <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>;charset=<?php bloginfo('charset'); ?>" />
 <title><?php bloginfo('name'); ?><?php wp_title(); ?></title>
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" />
+<link rel="alternate" type="application/rss+xml" title="RSS フィード" href="<?php bloginfo('rss2_url'); ?>" />
 </head>
 <body>
 
@@ -90,6 +91,7 @@ echo $thisyear . '年' . $thismonth . '月';
 </p>
 <?php endif; ?>
 
+<?php comments_template(); ?>
 </div>
 
 <!-- サイドバー -->
@@ -98,6 +100,13 @@ echo $thisyear . '年' . $thismonth . '月';
 <ul>
 <?php dynamic_sidebar(); ?>
 </ul>
+
+<p class="feed">
+<img src="<?php bloginfo('template_url'); ?>/feed-icon-28x28.png" alt="*" width="28" height="28" />
+<a href="<?php bloginfo('rss2_url') ?>">
+RSS FEED
+</a>
+</p>
 
 </div>
 

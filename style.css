@@ -142,6 +142,77 @@ p.pagelink {
 	width: 100%;
 }
 
+/* コメント */
+#comments {
+	border: solid 1px #0c8bcd;
+	padding: 0 18px;
+	margin: 20px 0;
+}
+
+#comments h3 {
+	font-size: 0.875em;
+	border-bottom: solid 1px #0c8bcd;
+	padding-bottom: 3px;
+	margin-top: 20px;
+}
+
+#comments p {
+	font-size: 0.75em;
+}
+
+#comments p a {
+	color: #0c8bcd;
+}
+
+#comments input, #comments textarea {
+	display: block;
+}
+
+#comments textarea {
+	width: 450px;
+}
+
+#comments .required {
+	color: #ff0000;
+}
+
+#comments code {
+	display: block;
+	margin-top: 5px;
+	font-size: smaller;
+}
+
+#comments ul {
+	margin: 0;
+	padding: 0;
+}
+
+#comments li.compost {
+	list-style-type: none;
+	border-bottom: dotted 1px #0c8bcd;
+	margin-bottom: 20px;
+}
+
+#comments p.cominfo {
+	text-align: right;
+}
+
+#comments #comfeed a {
+	background-image: url(feed-icon-12x12.png);
+	background-repeat: no-repeat;
+	background-position: 0 50%;
+	padding-left: 17px;
+	line-height: 1em;
+	color: #000;
+	text-decoration: none;
+}
+
+#comments #comfeed {
+	background-color: #a3d2f2;
+	padding: 8px;
+	margin-top: 30px;
+}
+
 /* サイドバー */
 div#sidebar {
 	width: 220px;
@@ -183,6 +254,62 @@ div#sidebar li li {
 div#sidebar li li a {
 	text-decoration: none;
 	color: #ffffff;
+}
+
+/* カレンダー */
+.widget_calendar h2 {
+display: none;
+}
+
+#wp-calendar {
+	font-size: 0.75em;
+	color: #ffffff;
+	width: 100%;
+}
+
+#wp-calendar a {
+	color: #ffffff;
+}
+
+#wp-calendar td, #wp-calendar th {
+	text-align: center;
+}
+
+#wp-calendar caption {
+	font-weight: bold;
+	text-align: left;
+	border-bottom: solid 1px #ffffff;
+	padding-bottom: 8px;
+	margin-bottom: 8px;
+}
+
+#wp-calendar #prev {
+	text-align: left;
+	padding-top: 3px;
+}
+
+#wp-calendar #next {
+	text-align: right;
+	padding-top: 3px;
+}
+
+/* フィード */
+p.feed {
+	font-size: 0.75em;
+	font-family: Verdana, Helvetica, sans-serif;
+	border: solid 1px #0c8bcd;
+	padding: 5px;
+	margin: 25px 0;
+}
+
+p.feed a {
+	color: #444444;
+	text-decoration: none;
+}
+
+p.feed img {
+	vertical-align: middle;
+	margin-right: 8px;
 }
 
 /* footer */
