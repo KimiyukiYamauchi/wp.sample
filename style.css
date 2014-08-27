@@ -41,6 +41,37 @@ div#header p#image {
 	margin: 8px 0 0;
 }
 
+/* ナビゲーションバー */
+div#header {
+	margin-bottom: 0;
+}
+
+div#nav ul {
+	background-color: #000000;
+	padding: 8px 0;
+	margin: 0 0 20px;
+}
+
+div#nav li a {
+	font-size: 0.75em;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+div#nav li a:hover {
+	color: #ffaa00;
+}
+
+div#nav li {
+	display: inline;
+	list-style-type: none;
+	border-right: solid 1px #ffffff;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+	
+
+
 /* コンテンツ */
 div#content {
 	width: 515px;
@@ -213,6 +244,12 @@ p.pagelink {
 	margin-top: 30px;
 }
 
+#comments #trurl {
+	background-color: #a3d2f2;
+	padding: 8px;
+	margin-bottom: 30px;
+}
+
 /* サイドバー */
 div#sidebar {
 	width: 220px;
@@ -328,4 +365,9 @@ address {
 
 address a {
 	color: #000000;
+}
+
+/* 固定ページ */
+div#content.page {
+	width: 100%;
 }

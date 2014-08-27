@@ -14,4 +14,11 @@
 <?php post_comments_feed_link(); ?>
 </p>
 
+<?php if(pings_open()): ?>
+<p id="trurl">
+<strong>トラックバックURL:</strong>
+<?php trackback_url(); ?>
+</p>
+<?php endif; ?>
+
 </div>

@@ -1,22 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
-<head>
-<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>;charset=<?php bloginfo('charset'); ?>" />
-<title><?php bloginfo('name'); ?><?php wp_title(); ?></title>
-<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" />
-<link rel="alternate" type="application/rss+xml" title="RSS フィード" href="<?php bloginfo('rss2_url'); ?>" />
-</head>
-<body>
-
-<!-- container -->
-<div id="container">
-
-<!-- header -->
-<div id="header">
-<h1><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
-<p id="desc"><?php bloginfo('description'); ?></p>
-<p id="image"><img src="<?php bloginfo('template_url'); ?>/header.jpg" alt="*" width="760" height="200" /></p>
-</div>
+<?php get_header(); ?>
 
 <!-- content -->
 <div id="content">
@@ -49,7 +31,10 @@ echo $thisyear . '年' . $thismonth . '月';
 <p class="postinfo">
 <?php echo get_the_date(); ?> <?php the_time(); ?>
  | 
-	 category : <?php the_category(', '); ?>
+category : <?php the_category(', '); ?>
+ |
+<a href="<?php comments_link(); ?>">コメント
+<?php comments_number(' (0) ', ' (1) ', ' (%) '); ?></a>
 </p>
 </div>
 
@@ -110,12 +95,4 @@ RSS FEED
 
 </div>
 
-<!-- フッター -->
-<div id="footer">
-<address>Copyright &copy; <a href="mailto:<?php bloginfo('admin_email'); ?>">Hidamari Diary</a>, All rights reserved.</address>
-</div>
-
-</div>
-	
-</body>
-</html>
+<?php get_footer(); ?>

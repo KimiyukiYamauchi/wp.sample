@@ -18,5 +18,10 @@ function mydesign($comment, $args, $depth){
 <?php
 }
 
+// カスタムメニュー
+register_nav_menus(array(
+	'navigation' => 'ナビゲーションバー'
+));
+
 
 ?>
