@@ -42,6 +42,11 @@ div#header p#image {
 }
 
 /* ナビゲーションバー */
+div#nav {
+	clear: both;
+	width: 100%;
+}
+
 div#header {
 	margin-bottom: 0;
 }
@@ -370,4 +375,19 @@ address a {
 /* 固定ページ */
 div#content.page {
 	width: 100%;
+}
+
+/* トップページ */
+div#topcontent p {
+	text-align: center;
+	font-size: 0.875em;
+	line-height: 1.5;
+	margin: 0 0 20px;
+}
+
+/* コンテンツの背景 */
+div.post,
+p.feed,
+#comments {
+	background-color: #ffffff;
 }

@@ -5,8 +5,10 @@
 <title><?php bloginfo('name'); ?><?php wp_title(); ?></title>
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" />
 <link rel="alternate" type="application/rss+xml" title="RSS フィード" href="<?php bloginfo('rss2_url'); ?>" />
+
+<?php wp_head(); ?>
 </head>
-<body>
+<body class="custom-background">
 
 <!-- container -->
 <div id="container">
@@ -15,7 +17,12 @@
 <div id="header">
 <h1><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
 <p id="desc"><?php bloginfo('description'); ?></p>
-<p id="image"><img src="<?php bloginfo('template_url'); ?>/header.jpg" alt="*" width="760" height="200" /></p>
+
+<?php if(!(is_page('ビジネスサイト風のページ'))): ?>
+<?php if(get_header_image()): ?>
+<p id="image"><img src="<?php header_image(); ?>" alt="*" width="<?php echo HEADER_IMAGE_WIDTH; ?>" height="<?php echo HEADER_IMAGE_HEIGHT; ?>" /></p>
+<?php endif; ?>
+<?php endif; ?>
 </div>
 
 <!-- ナビゲーションバー -->

@@ -7,17 +7,15 @@ Template Name: ビジネスサイト風テンプレート
 <?php get_header(); ?>
 
 <!-- content -->
-<div id="content" class="page">
+<div id="topcontent">
 
 
 <?php if(have_posts()): while(have_posts()): the_post(); ?>
 
-<div class="post">
-<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+<p><img src="<?php bloginfo('template_url'); ?>/topimage.jpg" alt="*" width="760" height="370" /></p>
+
 
 <?php the_content(); ?>
-
-</div>
 
 
 <?php endwhile; endif; ?>
